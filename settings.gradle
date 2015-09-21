@@ -1,0 +1,8 @@
+rootProject.name = 'kicket'
+
+include 'example'
+
+include 'lib'
+
+include 'exampleEar'
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd" xmlns="http://www.w3.org/1999/xhtml">
+
+    <body>
+        <form wicket:id="form">
+            <h1>Assign manager</h1>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td wicket:id="name">Some employee</td>
+                    <td><span wicket:id="amount">[amount]</span></td>
+                </tr>
+                <tr>
+                    <th>Managed by</th>
+                    <td><select wicket:id="managedBy">
+                        <option>Some Person</option>
+                        <option>Some Other Person</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Save"/></td>
+                </tr>
+            </table>
+        </form>
+        <span wicket:id="test">Test</span>
+        <span wicket:id="hellotext">Hello</span>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+repositories {
+    mavenCentral()
+}
+
+subprojects {
+    apply plugin: 'eclipse'
+    apply plugin: 'eclipse-wtp'
+    group = 'gr.dsigned.eservices.kicket'
+    version = '1.0'
+    sourceCompatibility = org.gradle.api.JavaVersion.VERSION_1_6
+    eclipse {
+        jdt {
+            sourceCompatibility = 1.6
+            targetCompatibility = 1.5
+        }
+        project {
+            natures 'org.eclipse.wst.common.modulecore.ModuleCoreNature'
+        }
+    }
+
+}

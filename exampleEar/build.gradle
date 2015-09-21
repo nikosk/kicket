@@ -1,0 +1,11 @@
+apply plugin: 'ear'
+apply plugin: 'eclipse-wtp'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    deploy project(path: ':example', configuration: 'archives')
+}
+
